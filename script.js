@@ -16,13 +16,13 @@ function contactar() {
 
 // Función para descargar CV
 function descargarCV() {
-    // Aquí puedes agregar la URL real del CV de Rebeca
-    const cvUrl = 'assets/cv-rebeca.pdf'; // Cambiar por la URL real
+    // URL de la imagen del CV
+    const cvUrl = 'assets/Curriculum-Vitae-Rebeca.jpg';
     
     // Crear un enlace temporal para descargar
     const link = document.createElement('a');
     link.href = cvUrl;
-    link.download = 'CV-Rebeca-Comunicadora-Grafica.pdf';
+    link.download = 'Curriculum-Vitae-Rebeca.jpg';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
