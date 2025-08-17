@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebeca - Comunicadora Gráfica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>Rebeca</h2>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                </ul>
+            </nav>
+            <!-- Iconos sociales removidos por solicitud del usuario -->
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Rebeca</h1>
+                    <h2 class="hero-subtitle">Comunicadora Gráfica</h2>
+                    <div class="hero-about">
+                        <p class="hero-description">
+                            Soy una comunicadora gráfica con más de 5 años de experiencia en el sector del diseño. 
+                            Mi enfoque se centra en crear soluciones visuales que no solo sean estéticamente atractivas, 
+                            sino que también comuniquen efectivamente el mensaje de la marca.
+                        </p>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="mostrarModalContacto()">
+                            <i class="fas fa-envelope"></i> Contáctame
+                        </button>
+                        <button class="btn btn-secondary" onclick="descargarCV()">
+                            <i class="fas fa-download"></i> Descargar CV
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-frame">
+                        <img src="assets/img/FotoRebeca.png" alt="Rebeca - Comunicadora Gráfica">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Section -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <p class="section-subtitle">Algunos de mis trabajos más recientes</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/Proyecto-1.png" alt="Proyecto 1">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Branding Corporativo</h3>
+                        <p class="project-description">
+                            Desarrollo de identidad visual completa para empresa de tecnología, 
+                            incluyendo logo, papelería corporativa y aplicaciones digitales.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-price">Proyecto Completado</span>
+                            <a href="https://instagram.com/proyecto1" class="btn btn-instagram" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i> Ver en Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/Proyecto-2.jpg" alt="Proyecto 2">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Diseño Editorial</h3>
+                        <p class="project-description">
+                            Diseño y maquetación de revista especializada en moda y lifestyle, 
+                            con enfoque en tipografía y composición visual.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-price">Proyecto Completado</span>
+                            <a href="https://instagram.com/proyecto2" class="btn btn-instagram" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i> Ver en Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/img/Proyecto-3.jpg" alt="Proyecto 3">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Packaging Design</h3>
+                        <p class="project-description">
+                            Diseño de packaging para línea de productos orgánicos, 
+                            combinando sostenibilidad con atractivo visual.
+                        </p>
+                        <div class="project-footer">
+                            <span class="project-price">Proyecto Completado</span>
+                            <a href="https://instagram.com/proyecto3" class="btn btn-instagram" target="_blank" rel="noopener">
+                                <i class="fab fa-instagram"></i> Ver en Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Rebeca Frades</h3>
+                    <p>Comunicadora Gráfica</p>
+                    <p>Transformando ideas en experiencias visuales</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contactame</h3>
+                    <div class="social-links">
+                        <div class="contact-row">
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXGkcznzgwMqNfpZXMMCmZsqxsLNWDVwHzJSXGGJxktjgMMFZgxRztLhxrsDkDKlRjBKm" class="btn bentoo-email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i> fradesrebeca5@gmail.com</a>
+                            <a href="https://wa.me/+543794446" class="btn bentoo-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        </div>
+                        <div class="contact-row">
+                            <a href="https://www.linkedin.com/in/rebeca-frades-20aa99314/" class="btn bentoo-linkedin" rel="noopener"><i class="fab fa-linkedin"></i> rebeca.frades</a>
+                            <a href="https://www.instagram.com/rebeca.elizabettt/" class="btn bentoo-instagram" rel="noopener"><i class="fab fa-instagram"></i> rebeca.elizabettt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
