@@ -6,10 +6,10 @@ function contactar() {
     const email = 'rebeca@email.com';
     const subject = 'Consulta desde Portfolio';
     const body = 'Hola Rebeca, me interesa tu trabajo como comunicadora gráfica...';
-    
+
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.open(mailtoLink);
-    
+
     // Alternativa: mostrar un modal de contacto
     mostrarModalContacto();
 }
@@ -18,7 +18,7 @@ function contactar() {
 function descargarCV() {
     // URL de la imagen del CV
     const cvUrl = 'assets/Curriculum-Vitae-Rebeca.jpg';
-    
+
     // Crear un enlace temporal para descargar
     const link = document.createElement('a');
     link.href = cvUrl;
@@ -26,7 +26,7 @@ function descargarCV() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    
+
     // Mostrar notificación
     mostrarNotificacion('CV descargado correctamente');
 }
@@ -54,15 +54,15 @@ function mostrarModalContacto() {
             </div>
         </div>
     `;
-    
+
     document.body.appendChild(modal);
-    
+
     // Cerrar modal
     const closeBtn = modal.querySelector('.close');
     closeBtn.onclick = () => {
         document.body.removeChild(modal);
     };
-    
+
     // Cerrar al hacer clic fuera del modal
     modal.onclick = (e) => {
         if (e.target === modal) {
@@ -76,14 +76,14 @@ function mostrarNotificacion(mensaje) {
     const notificacion = document.createElement('div');
     notificacion.className = 'notificacion';
     notificacion.textContent = mensaje;
-    
+
     document.body.appendChild(notificacion);
-    
+
     // Animación de entrada
     setTimeout(() => {
         notificacion.classList.add('show');
     }, 100);
-    
+
     // Remover después de 3 segundos
     setTimeout(() => {
         notificacion.classList.remove('show');
@@ -96,20 +96,20 @@ function mostrarNotificacion(mensaje) {
 }
 
 // Animación de scroll suave para navegación
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Navegación suave
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
-    
+
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            
+
             if (targetSection) {
                 const headerHeight = document.querySelector('.header').offsetHeight;
                 const targetPosition = targetSection.offsetTop - headerHeight;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -117,60 +117,60 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
+
     // Animación de elementos al hacer scroll
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
-    
-    const observer = new IntersectionObserver(function(entries) {
+
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate-in');
             }
         });
     }, observerOptions);
-    
+
     // Observar elementos para animación
     const animateElements = document.querySelectorAll('.project-card, .certificate-card');
     animateElements.forEach(el => observer.observe(el));
-    
+
     // Animación de barras de habilidades removida por solicitud del usuario
-    
+
     // Header transparente al inicio, blanco al hacer scroll
     const header = document.querySelector('.header');
-    
-    window.addEventListener('scroll', function() {
+
+    window.addEventListener('scroll', function () {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
+
         if (scrollTop > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
     });
-    
+
     // Efecto parallax removido por solicitud del usuario
-    
+
     // Botones de marco removidos - usando solo marco imagen.png
 });
 
 // Función para cambiar imagen de proyecto al hacer hover
 function cambiarImagenProyecto(elemento, imagenOriginal, imagenAlternativa) {
     const img = elemento.querySelector('img');
-    
+
     elemento.addEventListener('mouseenter', () => {
         img.src = imagenAlternativa;
     });
-    
+
     elemento.addEventListener('mouseleave', () => {
         img.src = imagenOriginal;
     });
 }
 
 // Inicializar cambio de imágenes en proyectos
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const proyectos = [
         {
             elemento: document.querySelector('.project-card:nth-child(1)'),
@@ -186,9 +186,24 @@ document.addEventListener('DOMContentLoaded', function() {
             elemento: document.querySelector('.project-card:nth-child(3)'),
             original: 'assets/img/Proyecto-3.jpg',
             alternativa: 'assets/img/Proyecto-3b.jpg'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(4)'),
+            original: 'assets/img/Proyecto-4.png',
+            alternativa: 'assets/img/Proyecto-4b.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(5)'),
+            original: 'assets/img/Proyecto-5.png',
+            alternativa: 'assets/img/Proyecto-5b.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(6)'),
+            original: 'assets/img/Proyecto-6.png',
+            alternativa: 'assets/img/Proyecto-6b.png'
         }
     ];
-    
+
     proyectos.forEach(proyecto => {
         if (proyecto.elemento) {
             cambiarImagenProyecto(proyecto.elemento, proyecto.original, proyecto.alternativa);
