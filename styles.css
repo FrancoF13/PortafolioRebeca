@@ -293,7 +293,6 @@ body {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* Back to 300px for narrower cards */
     gap: 40px;
     margin-top: 60px;
     align-items: stretch;
@@ -306,14 +305,16 @@ body {
     }
     .bento-wide {
         grid-column: span 2;
+        flex-direction: row;
     }
-    .bento-tall {
-        grid-row: span 2;
+    .bento-wide .project-image {
+        width: 50%;
+        height: auto;
+        min-height: 100%;
     }
-    .bento-tall .project-image {
-        flex: 1;
-        min-height: 350px;
-        height: 100%;
+    .bento-wide .project-content {
+        width: 50%;
+        justify-content: center;
     }
 }
 
