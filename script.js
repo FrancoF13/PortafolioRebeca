@@ -189,28 +189,28 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             elemento: document.querySelector('.project-card:nth-child(4)'),
-            original: 'assets/img/Proyecto-2.jpg',
-            alternativa: 'assets/img/Proyecto-2b.jpg'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(5)'),
             original: 'assets/img/Proyecto-3.jpg',
             alternativa: 'assets/img/Proyecto-3b.jpg'
         },
         {
+            elemento: document.querySelector('.project-card:nth-child(5)'),
+            original: 'assets/img/Proyecto-2.jpg',
+            alternativa: 'assets/img/Proyecto-2b.jpg'
+        },
+        {
             elemento: document.querySelector('.project-card:nth-child(6)'),
+            original: 'assets/img/upa1.png',
+            alternativa: 'assets/img/upa2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(7)'),
             original: 'assets/img/Proyecto-6.png',
             alternativa: 'assets/img/Proyecto-6b.png'
         },
         {
-            elemento: document.querySelector('.project-card:nth-child(7)'),
+            elemento: document.querySelector('.project-card:nth-child(8)'),
             original: 'assets/img/Proyecto-5.png',
             alternativa: 'assets/img/Proyecto-5b.png'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(8)'),
-            original: 'assets/img/upa1.png',
-            alternativa: 'assets/img/upa2.png'
         },
         {
             elemento: document.querySelector('.project-card:nth-child(9)'),
