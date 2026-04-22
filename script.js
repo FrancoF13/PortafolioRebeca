@@ -201,6 +201,26 @@ document.addEventListener('DOMContentLoaded', function () {
             elemento: document.querySelector('.project-card:nth-child(6)'),
             original: 'assets/img/Proyecto-6.png',
             alternativa: 'assets/img/Proyecto-6b.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(7)'),
+            original: 'assets/img/jees1.png',
+            alternativa: 'assets/img/jees2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(8)'),
+            original: 'assets/img/nuevosiglo1.png',
+            alternativa: 'assets/img/nuevosiglo2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(9)'),
+            original: 'assets/img/saintmartin1.png',
+            alternativa: 'assets/img/saintmartin2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(10)'),
+            original: 'assets/img/upa1.png',
+            alternativa: 'assets/img/upa2.png'
         }
     ];
 
