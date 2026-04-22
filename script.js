@@ -189,13 +189,13 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             elemento: document.querySelector('.project-card:nth-child(4)'),
-            original: 'assets/img/Proyecto-3.jpg',
-            alternativa: 'assets/img/Proyecto-3b.jpg'
+            original: 'assets/img/angelesdelpuente1.jpg',
+            alternativa: 'assets/img/angelesdelpuente2.jpg'
         },
         {
             elemento: document.querySelector('.project-card:nth-child(5)'),
-            original: 'assets/img/Proyecto-2.jpg',
-            alternativa: 'assets/img/Proyecto-2b.jpg'
+            original: 'assets/img/casadedios1.jpg',
+            alternativa: 'assets/img/casadedios2.jpg'
         },
         {
             elemento: document.querySelector('.project-card:nth-child(6)'),
@@ -204,23 +204,23 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             elemento: document.querySelector('.project-card:nth-child(7)'),
-            original: 'assets/img/Proyecto-6.png',
-            alternativa: 'assets/img/Proyecto-6b.png'
+            original: 'assets/img/congeladosfe1.png',
+            alternativa: 'assets/img/ongeladosfe2.png'
         },
         {
             elemento: document.querySelector('.project-card:nth-child(8)'),
-            original: 'assets/img/Proyecto-5.png',
-            alternativa: 'assets/img/Proyecto-5b.png'
+            original: 'assets/img/coki1.png',
+            alternativa: 'assets/img/coki2.png'
         },
         {
             elemento: document.querySelector('.project-card:nth-child(9)'),
-            original: 'assets/img/Proyecto-1.png',
-            alternativa: 'assets/img/Proyecto-1b.png'
+            original: 'assets/img/petjam1.png',
+            alternativa: 'assets/img/petjam2.png'
         },
         {
             elemento: document.querySelector('.project-card:nth-child(10)'),
-            original: 'assets/img/Proyecto-4.png',
-            alternativa: 'assets/img/Proyecto-4b.png'
+            original: 'assets/img/reentrelazados1.png',
+            alternativa: 'assets/img/reentrelazados2.png'
         }
     ];
 
