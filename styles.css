@@ -297,6 +297,24 @@ body {
     gap: 40px;
     margin-top: 60px;
     align-items: stretch;
+    grid-auto-flow: dense;
+}
+
+@media (min-width: 1025px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .bento-wide {
+        grid-column: span 2;
+    }
+    .bento-tall {
+        grid-row: span 2;
+    }
+    .bento-tall .project-image {
+        flex: 1;
+        min-height: 350px;
+        height: 100%;
+    }
 }
 
 /* Removed Bento Spans - All cards are uniform now */
