@@ -17,12 +17,12 @@ function contactar() {
 // Función para descargar CV
 function descargarCV() {
     // URL de la imagen del CV
-    const cvUrl = 'assets/Curriculum-Vitae-Rebeca.jpg';
+    const cvUrl = 'assets/Curriculum-Vitae-Rebeca.jpeg';
 
     // Crear un enlace temporal para descargar
     const link = document.createElement('a');
     link.href = cvUrl;
-    link.download = 'Curriculum-Vitae-Rebeca.jpg';
+    link.download = 'Curriculum-Vitae-Rebeca.jpeg';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -221,6 +221,16 @@ document.addEventListener('DOMContentLoaded', function () {
             elemento: document.querySelector('.project-card:nth-child(10)'),
             original: 'assets/img/reentrelazados1.png',
             alternativa: 'assets/img/reentrelazados2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(11)'),
+            original: 'assets/img/genesis1.jpeg',
+            alternativa: 'assets/img/Genesis2.jpeg'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(12)'),
+            original: 'assets/img/gabinete1.jpeg',
+            alternativa: 'assets/img/gabinete2.jpeg'
         }
     ];
 
