@@ -174,63 +174,63 @@ document.addEventListener('DOMContentLoaded', function () {
     const proyectos = [
         {
             elemento: document.querySelector('.project-card:nth-child(1)'),
-            original: 'assets/img/saintmartin1.png',
-            alternativa: 'assets/img/saintmartin2.png'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(2)'),
-            original: 'assets/img/nuevosiglo1.png',
-            alternativa: 'assets/img/nuevosiglo2.png'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(3)'),
-            original: 'assets/img/jees1.png',
-            alternativa: 'assets/img/jees2.png'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(4)'),
-            original: 'assets/img/angelesdelpuente1.jpg',
-            alternativa: 'assets/img/angelesdelpuente2.jpg'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(5)'),
-            original: 'assets/img/casadedios1.jpg',
-            alternativa: 'assets/img/casadedios2.jpg'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(6)'),
-            original: 'assets/img/upa1.png',
-            alternativa: 'assets/img/upa2.png'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(7)'),
-            original: 'assets/img/congeladosfe1.png',
-            alternativa: 'assets/img/ongeladosfe2.png'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(8)'),
-            original: 'assets/img/coki1.png',
-            alternativa: 'assets/img/coki2.png'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(9)'),
-            original: 'assets/img/petjam1.png',
-            alternativa: 'assets/img/petjam2.png'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(10)'),
-            original: 'assets/img/reentrelazados1.png',
-            alternativa: 'assets/img/reentrelazados2.png'
-        },
-        {
-            elemento: document.querySelector('.project-card:nth-child(11)'),
             original: 'assets/img/genesis1.jpeg',
             alternativa: 'assets/img/Genesis2.jpeg'
         },
         {
-            elemento: document.querySelector('.project-card:nth-child(12)'),
+            elemento: document.querySelector('.project-card:nth-child(2)'),
             original: 'assets/img/gabinete1.jpeg',
             alternativa: 'assets/img/gabinete2.jpeg'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(3)'),
+            original: 'assets/img/saintmartin1.png',
+            alternativa: 'assets/img/saintmartin2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(4)'),
+            original: 'assets/img/nuevosiglo1.png',
+            alternativa: 'assets/img/nuevosiglo2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(5)'),
+            original: 'assets/img/jees1.png',
+            alternativa: 'assets/img/jees2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(6)'),
+            original: 'assets/img/angelesdelpuente1.jpg',
+            alternativa: 'assets/img/angelesdelpuente2.jpg'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(7)'),
+            original: 'assets/img/casadedios1.jpg',
+            alternativa: 'assets/img/casadedios2.jpg'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(8)'),
+            original: 'assets/img/upa1.png',
+            alternativa: 'assets/img/upa2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(9)'),
+            original: 'assets/img/congeladosfe1.png',
+            alternativa: 'assets/img/ongeladosfe2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(10)'),
+            original: 'assets/img/coki1.png',
+            alternativa: 'assets/img/coki2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(11)'),
+            original: 'assets/img/petjam1.png',
+            alternativa: 'assets/img/petjam2.png'
+        },
+        {
+            elemento: document.querySelector('.project-card:nth-child(12)'),
+            original: 'assets/img/reentrelazados1.png',
+            alternativa: 'assets/img/reentrelazados2.png'
         }
     ];
 
